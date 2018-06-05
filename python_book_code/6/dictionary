@@ -1,0 +1,157 @@
+# alien={'color':'green','size':8}
+# print(alien['color'])
+# print(alien['size'])
+# print("the color is "+alien['color']+", and the size is "+str(alien['size']))
+
+#6.2
+# personal_information={"first_name":"shuang","last_name":"qiu","age":"22","city":"nanjing"}
+# print(personal_information)
+# print(personal_information["first_name"])
+# print(personal_information["last_name"])
+# print(personal_information["age"])
+# print(personal_information["city"])
+
+
+# person_num={
+#     'tom':'2',
+#     'bob':'4',
+#     'anna':'5',
+#     'jhon':'3',
+#     'peter':'9'
+#     }
+# print("tom's favorite number is "+str(person_num['tom']))
+
+#
+# learning_languages={
+#     'jen':'python',
+#     'sarah':'c',
+#     'edward':'ruby',
+#     'phil':'c++',
+#     'angel':'c*',
+#     }
+# # for name,language in learning_languages.items():
+# #     print("\nname: "+name)
+# #     print("language: "+ language)
+# print("jen : "+learning_languages['jen'])
+# print("sarah : "+learning_languages['sarah'])
+# print('edward : '+learning_languages['edward'])
+# print('phil : '+learning_languages['phil'])
+# print('ange : '+learning_languages['angel'])
+
+
+#6.3
+# learning_languages={
+#     'jen':'python',
+#     'sarah':'c',
+#     'edward':'ruby',
+#     'phil':'c++',
+#     'angel':'c*',
+#     }
+#
+# learning_languages['tom']='c'
+#
+# for k,v in learning_languages.items():
+#     print("\nk : "+k)
+#     print(v)
+
+# famous_river={
+#     'nile':'egypt',
+#     'yellow river':'china',
+#     'long river':'china',
+#     }
+# for river_name,country in famous_river.items():
+#     print("The "+river_name.title()+" runs through "+country.title())
+#
+# for river_name in famous_river.keys():
+#     print(river_name.title())
+#
+# for country in famous_river.values():
+#     print(country.title())
+
+
+# favorite_languages={
+#     'jen':'python',
+#     'sarah':'c',
+#     'edward':'ruby',
+#     'phil':'c++',
+#     'tom':'c*',
+# }
+# invite_person=['jen','tom']
+# for name in favorite_languages.keys():
+#         if name in invite_person:
+#             print("谢谢 "+name+"参与")
+#         else:
+#             print("邀请 "+name+" 来参加调查")
+
+
+# 6.4
+# people1={"first_name":"shuang","last_name":"qiu","age":"22","city":"nanjing",}
+# people2={"first_name":"yunhao","last_name":"chen","age":"27","city":"wuhan",}
+# people3={"first_name":"xiaoxi","last_name":"zhao","age":"24","city":"beijing",}
+# people=[people1,people2,people3]
+# for person in people:
+#     print(person)
+
+
+
+##列表里面套字典
+# angel={"type":'dog','owner_name':'sam'}
+# ball={"type":'cat','owner_name':'tom'}
+# banana={"type":'dog','owner_name':'jack'}
+# strawbarry={"type":'chicken','owner_name':'bob'}
+# pets=[angel,ball,banana,strawbarry]
+# for pet in pets:
+#     print(pet)
+
+
+
+# #字典里面套列表
+# favorite_places={
+#     'tom':['beijing','guangzhou'],
+#     'bob':['shanghai','suzhou','beijing'],
+#     'emelia':['nanjing','wuhan','xiamen'],
+#     }
+# for name,places in favorite_places.items():
+#     print(name.title())
+#     for place in places:
+#         print("\t"+place.title())
+
+
+# person_num={
+#     'tom':['2','5'],
+#     'bob':'4',
+#     'anna':['5','1','8'],
+#     'jhon':'3',
+#     'peter':'9'
+#     }
+# for person,number in person_num.items():
+#     print(person.title())
+#     if len(number)>1:
+#         for num in number:
+#             print("\t"+num)
+#     else:
+#         print("\t"+number)
+
+
+cities={
+    'beijing':{
+        'country':'china',
+        'population':1000000,
+        'fact':'beautiful',
+        },
+    'chengdu':{
+        'country':'china',
+        'population':900000,
+        'fact':'hot',
+        },
+    'xiamen':{
+        'country':'china',
+        'population':160000,
+        'fact':'sea',
+        },
+    }
+
+for city,city_information in cities.items():
+    print(city.title())
+    for k,v in city_information.items():
+        print("\t"+k+": "+str(v))

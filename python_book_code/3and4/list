@@ -1,0 +1,146 @@
+# names=['lucy','tom','jhon']
+# cannotgo='tom'
+# print(cannotgo.title()+' can not go to the party!')
+# names.remove(cannotgo)
+# names.append('peter')
+#
+#
+# print("welcome "+names[0].title())
+# print("welcome "+names[1].title())
+# print("welcome "+names[2].title())
+# print('I found a bigger table that i can invite more people')
+# print(names)
+# names.insert(0,'emelia')
+# print(names)
+# names.insert(2,'etta')
+# print(names)
+# names.append('angel')
+# print(names)
+# for name in names:
+#     print("welcome "+name+ "\ttogether to have a dinner")
+# print('there is something wrong with the table')
+# # delete_person=[]
+# # i=0
+# # for i in names[i]:
+# #     if i >=2:
+# #         delete_person.append(names[i])
+# #         new_person=names.pop[i]
+# #     else:
+# #         i=i+1
+# #  print(delete_person)
+# #  print(new_person)
+#
+#
+# delete_person=[]
+# i=0
+# lenth=int(len(names))
+# print(names)
+# print(names[:2])
+#
+#
+# # for i in names[i]:
+# #     if i>=2 and i<=lenth:
+# #         delete_person.append('names[i]')
+# #         new_person=names.pop[i]
+# #     else:
+# #         i=i+1
+# # print(delete_person)
+# # print(new_person)
+# print(names)
+# print(sorted(names,reverse=True))
+
+#4.1
+#country_go=['beijing','xizang','xiamen','tianjing0','xining']
+# print(country_go)
+# print(sorted(country_go))
+# print(country_go)
+# print(sorted(country_go,reverse=True))
+
+
+# print(country_go)
+# country_go.reverse()
+# print(country_go)
+# country_go.reverse()
+# print(country_go)
+
+#
+# print(country_go)
+# country_go.sort()
+# print(country_go)
+# country_go.sort(reverse=True)
+# print(country_go)
+#
+# print(len(country_go))
+
+
+# '''
+# 4.2
+# '''
+# love_food=['humberger','pizza','hotdog']
+# for food in love_food:
+#     print('Chen yunhao really love\t'+food)
+# print("Chen yunhao really love them")
+#
+
+#4.3
+# for number in range(1,21):
+#     print(number)
+#
+
+
+
+# num=list(range(1,10000000))
+# for number in num:
+#     print(number)
+
+#
+# num=list(range(1,10000000))
+# print(min(num))
+# print(max(num))
+# print(sum(num))
+
+#
+# num=list(range(3,33,3))
+# for number in num:
+#     print(number)
+
+
+
+#4.4
+# number=[]
+# num=list(range(1,11))
+# for numbers in num :
+#     number.append(numbers**3)
+# print(number)
+#
+# squares=[value**3 for value in range(1,11)]
+# print(squares)
+#
+#
+# print("The first three items in the list are: ")
+# print(squares[0:3])
+# print(squares[3:6])
+# print(squares[-3:])
+
+# Clove_food = ['humberger', 'pizza', 'hotdog']
+# print(Clove_food)
+# Qfavorite_food=Clove_food[:]
+# print(Clove_food)
+# print(Qfavorite_food)
+# Clove_food.append('sanwish')
+# Qfavorite_food.append('noodles')
+# print(Clove_food)
+# print(Qfavorite_food)
+# for food in Clove_food:
+#     print(food)
+# for food in Qfavorite_food:
+#     print(food)
+
+
+#4.5
+foods=('humberger', 'pizza', 'hotdog', 'sanwish', 'noodles')
+# for food in foods:
+#     print(food)
+print(foods[0])
+# foods[0]='fry'
+# print(foods[0])

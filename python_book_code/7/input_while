@@ -1,0 +1,106 @@
+# car="您好，请问您要租赁什么样的汽车？\n"
+# car+="有空位ma"
+# cars=input(car)
+# print(cars)
+
+# 7.1
+# car=input("您好，请问您要租赁什么样的汽车？\n")
+# print("Let me see if i can find you a "+car)
+
+# number=input("请问有多少人用餐？\n")
+# num=int(number)
+# if num>8:
+#     print("不好意思，没有空位")
+# else:
+#     print("有空位")
+
+
+# number=input("please input a number\n")
+# num=int(number)
+# if num%10==0:
+#     print("这个数字是10的整数倍")
+# else:
+#     print("这个数字不是10的整数倍")
+
+
+
+
+#7.2
+# 法1
+# flg=True
+# while flg:
+#     ingredients = input("请输入比萨配料\n")
+#     if ingredients=='quit':
+#         flg=False
+#     else:
+#         print("我们会在比萨中加入 " + ingredients)
+# 法2
+# ingredients=''
+# while ingredients!='quit':
+#     ingredients = input("请输入比萨配料\n")
+#     if ingredients=='quit':
+#         break
+#     else:
+#         print("我们会在比萨中加入 " + ingredients)
+
+
+# 法3
+# flag=True
+# while flag:
+#     ingredient=input("请输入比萨配料\n")
+#     if ingredient=='quit':
+#         flag=False
+#     else:
+#         print("我们会在比萨中加入 " + ingredient)
+
+
+#
+# flag=True
+# while flag:
+#     age=input("请输入年龄\n")
+#
+#     if str(age)=='quit':
+#         break
+#     elif int(age)<3:
+#         print("免费")
+#     elif int(age)>=3 and int(age)<=12:
+#         print("10美元")
+#     elif int(age)>12:
+#         print("15美元")
+
+
+
+# 7.3
+# sandwish_orders=['sandwish_a','sandwish_b','sandwish_c']
+# finished_sandwish=[]
+# for sandwish in sandwish_orders:
+#     print("I made your "+sandwish+" sandwish")
+# while sandwish_orders:
+#     finished_sandwish.append(sandwish_orders.pop())
+# for sandwish in finished_sandwish:
+#     print(sandwish)
+
+
+
+# print("熟食店的五香烟熏牛肉买完了")
+# sandwish_orders=['pastrami','pastrami','sandwish_c','pastrami','tuna']
+# print(sandwish_orders)
+# while 'pastrami' in sandwish_orders:
+#     sandwish_orders.remove('pastrami')
+# print(sandwish_orders)
+
+
+
+responses={}
+flag=True
+while flag:
+    name=input("请输入你的姓名:\n")
+    response=input("If you could visit one place in the world,where would you go?\n")
+    responses[name]=response
+    repeat=input("是否有其他人参与调查？\n")
+    if repeat=='no':
+        flag=False
+for name,response in responses.items():
+    print(name,response)
+
+

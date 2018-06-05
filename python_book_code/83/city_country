@@ -1,0 +1,182 @@
+#8.1
+# def display_message(a):
+#     print("你在本章学的是 "+a)
+#
+# display_message('函数')
+
+
+# def favorite_book(title):
+#     print("One of my favorite books is "+title)
+#
+# favorite_book('Alice')
+
+# 8.2
+# def make_shirt(size,word):
+#     print("T恤的尺码是 "+size+',T恤上的字样为 '+word)
+#
+# make_shirt('big','hello world')
+
+
+# def make_shirt(size='big',word='I love python'):
+#     print("T恤的尺码是 "+size+',T恤上的字样为 '+word)
+#
+# make_shirt()
+# make_shirt('middle')
+# make_shirt('small','i love you')
+
+
+# def describe_city(city_name,city_country):
+#     print(city_name+" is in "+city_country)
+#
+# describe_city('beijiing','China')
+
+
+#8.3
+# def city_country(city_name,city_blong):
+#     print("“"+ city_name.title()+", "+city_blong.title()+"”")
+#
+# city_country('beijing','china')
+
+
+# def make_album(singer_name,record_name):
+#     album={
+#         'singer':singer_name,
+#         'record':record_name,
+#     }
+#     return album
+#
+#
+# album=make_album('liyuchun','yumi')
+# print(album)
+
+
+# def make_album(singer_name,record_name,frequence=''):
+#     album={
+#         'singer':singer_name,
+#         'record':record_name,
+#     }
+#     if frequence:
+#         album['frequence']=frequence
+#     return album
+#
+#
+# # album=make_album('liyuchun','yumi','5')
+# # print(album)
+#
+#
+#
+# flag=True
+# while flag:
+#     singer_name=input("请输入一个专辑的歌手: \n")
+#     record_name=input("请输入一个专辑名: \n")
+#     album=make_album(singer_name,record_name)
+#     back=input("continue?\n")
+#     if back=='no':
+#         print(album)
+#         flag=False
+#     else:
+#         print(album)
+
+
+
+
+
+
+#8.4
+
+# def shou_magicians(names):
+#     for name in names:
+#         print(name)
+# magicians_name=['tom','jhon','bob','sam','peter']
+# shou_magicians(magicians_name)
+
+
+
+# def shou_magicians(names):
+#     for name in names:
+#         print(name)
+#
+#
+# def make_great(names):
+#     names1=[]
+#     for name in names:
+#         names1.append("The Great "+name)
+#         #print(names1)
+#     return names1
+#
+# magicians_name=['tom','jhon','bob','sam','peter']
+# a=make_great(magicians_name)
+# shou_magicians(a)
+
+
+
+
+
+# def shou_magicians(names):
+#     for name in names:
+#         print(name)
+#
+#
+# # def make_great(names):
+# #     names1=[]
+# #     for name in names:
+# #         names1.append("The Great "+name)
+# #         #print(names1)
+# #     return names1
+#
+#
+# def make_great(names):#法二，用pop方法
+#     names1=[]
+#     while names:
+#         names1.append("The Great "+names.pop())
+#         # print(names1)
+#     return names1
+#
+# magicians_name=['tom','jhon','bob','sam','peter']
+# shou_magicians(magicians_name)
+# a=make_great(magicians_name[:])#利用副本，可以在shou_magicians(magicians_name)调用，得到结果
+# shou_magicians(a)
+# shou_magicians(magicians_name)
+
+
+
+
+#8.5
+# def food(*infs):
+#     print("三明治具有以下食材: ")
+#     for inf in infs:
+#         print('---' + inf)
+#
+# food('egg')
+# food('egg','fruit','vogetable','fruit')
+
+
+
+# def build_prifile(first,last,**info):
+#     profile={}
+#     profile['first name']=first
+#     profile['last name'] = last
+#     for key,value in info.items():
+#         profile[key]=value
+#     return profile
+#
+# information=build_prifile('qiu','shuang',comefrom='china',favoritefood='humberger')
+# print(information)
+
+
+
+# def car_info(maker,type,**info):
+#     informa={}
+#     informa['maker']=maker
+#     informa['type'] = type
+#     for key,value in info.items():
+#         informa[key]=value
+#     return informa
+#
+# information=car_info('subaru','outback',color='blue',tow_package='TRUE')
+# print(information)
+
+
+
+import pizza
+pizza.make_pizza(16,'cheese')
